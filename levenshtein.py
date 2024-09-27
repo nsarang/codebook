@@ -5,7 +5,7 @@ def levenshtein_distance(s1, s2):
     (insertions, deletions, or substitutions) required to change one string
     into the other.
 
-    dp[i][j] = min:
+    dp[i][j] = min of:
         - dp[i - 1][j - 1] + int(s1[i - 1] != s2[j - 1]) # substitution or no change
         - dp[i - 1][j] + 1 # deletion from s1
         - dp[i][j - 1] + 1 # insertion to s1
