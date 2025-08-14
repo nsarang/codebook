@@ -1,6 +1,7 @@
 from collections import deque
 
 def bfs(graph, start):
+    """Breadth-First Search (BFS)"""
     visited = {start: 0}
     queue = deque([start])
     while queue:

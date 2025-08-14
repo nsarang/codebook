@@ -1,4 +1,5 @@
 def dfs(graph, node, visited=None):
+    """Depth-First Search (DFS)"""
     if visited is None:
         visited = set()
     visited.add(node)
