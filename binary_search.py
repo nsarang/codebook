@@ -1,11 +1,14 @@
-from typing import List
 import operator
 
-def binary_search(L: List, x, side="left", key=None):
+def binary_search(L: list, x, side="left", key=None):
     """
-    x: The value to search for
-    side: Find the leftmost or rightmost index of x in L
-    key: Map L to a comparable value
+    Finds index of first element that is >= or > x in sorted list L
+    
+    x: Value to search for
+    side: Comparison behavior
+        - "left": First element >= x
+        - "right": First element > x
+    key: Map L to comparable value
     """
     l, r = 0, len(L)
     # le = <=, lt = <
